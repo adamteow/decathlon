@@ -4,32 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Self-Powered Rowing Machine</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
 </head>
 <body>
-  <div header>
-    <div logo></div>
-    <div search></div>
-    <div right-nav>
-      <div shopping-cart></div>
+
+
+  <header>
+    <div class="logo"></div>
+    <div class="search"></div>
+    <div class="right-nav">
+      <div class="shopping-cart"></div>
+    </div>
+  </header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="navbar-nav mx-auto"> 
+      <a class="nav-link" href="#">Sports</a>
+      <a class="nav-link" href="#">Bestsellers</a>
+      <a class="nav-link" href="#">Men</a>
+      <a class="nav-link" href="#">Women</a>
+      <a class="nav-link" href="#">Kids</a>
+      <a class="nav-link" href="#">Accessories</a>
+      <a class="nav-link" href="#">Clearance</a>
     </div>
   </div>
-  <div center-nav></div>
-  <div announcement></div>
-  <div product-body>
-    <div product-image></div>
-    <div product-info></div>
+</nav>
+
+
+
+  <div class="announcement"></div>
+  <div class="product-container">
+    <div class = "breadcrumb"></div>
+    <div class = rate-us"></div>
+    <div class="product-image"></div>
+    <div class="product-info">
+      <h3>Self-Powered Rowing Machine 500B</h3>
+      <p>Our passionate designers have developed this rowing machine for regular use of up to 5 hours per week. 
+        <br><br>Want to ride in front of the window (or the TV) but don't have an outlet nearby? No need for an outlet: the 500B's console is self-powered by your movements. Plus: comfortable and smart!
+        <br><br>Metallic structure: 100.0% Steel; Protection cover: 100.0% Acrylonitrile Butadiene Styrene; Sliding bar: 100.0% Aluminium</p>
+    </div>
   </div>
-  <div add-info>
-    <div benefits></div>
-    <div technical></div>
-    <div videos></div>
-    <div reviews></div>
+
+  <div class="add-info">
+    <button class="tab-button active" onclick="openTab(event, 'tab1')">Benefits</button>
+    <button class="tab-button" onclick="openTab(event, 'tab2')">Technical Information</button>
+    <button class="tab-button" onclick="openTab(event, 'tab3')">Videos</button>
+    <button class="tab-button" onclick="openTab(event, 'tab4')">Reviews</button>
+    
+    <div id="tab1" class="tab-content active">
+      <div class="row">
+        <h3>Benefits</h3>
+        <div class="col-md-6">
+          <ul>
+            <li>Benefit 1</li>
+            <li>Benefit 2</li>
+            <li>Benefit 3</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Benefit 4</li>
+            <li>Benefit 5</li>
+            <li>Benefit 6</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="tab2" class="tab-content">Technical</div>
+    <div id="tab3" class="tab-content">Videos</div>
+    <div id="tab4" class="tab-content">Reviews</div>
   </div>
-  <div value-proposition></div>
-  <div footer></div>
-  <div below-footer></div>
-  <div social-payment></div>
-  <div site-info></div>
-  <div community></div>
+
+  <div class="similar-products"></div>
+  <div class="bought-together"></div>
+  <div class="promises"></div>
+  <footer></footer>
+  <div class="below-footer"></div>
+  <div class="social-payment"></div>
+  <div class="site-info"></div>
+  <div class="community"></div>
+
+  <script src ="/product-page.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
