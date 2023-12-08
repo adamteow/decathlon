@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="fitness-catalog.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Breadcrumb nav -->
+    <div
+      class="main-container"
+      style="position: absolute; top: 10px; left: 10px"
+    >
+      <div class="sub-container">
+        <nav class="breadcrumb">
+          <ol>
+            <li>
+              <a href=""
+                ><span><i class="fa fa-home"></i>Home</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span
+                  ><i class="fa-solid fa-angles-right"></i>Fitness Sports</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span
+                  ><i class="fa-solid fa-angles-right"></i>Fitness Cardio</span
+                ></a
+              >
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Title -->
+    <div class="title-container"><h2>Fitness Cardio</h2></div>
+    <!-- Categories -->
+    <div class="main-category-container">
+      <div class="sub-category-container">
+        <div class="subcat-button"><a href="">Workout Apparels</a></div>
+        <div class="subcat-button"><a href="">Workout Shoes</a></div>
+        <div class="subcat-button"><a href="">Workout Accessories</a></div>
+        <div class="subcat-button"><a href="">Workout Equipments</a></div>
+        <div class="subcat-button"><a href="">HIIT Training</a></div>
+      </div>
+    </div>
+    <!-- Hide/Show filter -->
+    <div class="catalog-outer-container">
+      <div class="filter-bar">
+        <div class="filter-inner-bar">
+          <div class="filter-toggle">
+            <a href="">
+              <span
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+                ><i class="fa-solid fa-sliders"></i>Hide Filters</span
+              >
+            </a>
+          </div>
+          <div class="results-sorter">
+            <div class="results-found">
+              <span><strong>0</strong> Results found</span>
+            </div>
+            <div class="sort-by">Sort By:</div>
+            <div class="category-sort-by">
+              <select class="sort-by-selection">
+                <option class="sort-by-option" value="">Most Relevant</option>
+                <option class="sort-by-option" value="">Lowest Price</option>
+                <option class="sort-by-option" value="">Highest Price</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-catalog-group">
+        <!-- Sidebar Accordion -->
+        <div class="sidebar-filter">
+          <div class="reset-filter-container">
+            <h5>Filters<span> (0)</span></h5>
+            <button type="reset" class="btn btn-danger btn-sm" value="Reset">
+              Reset filters
+            </button>
+          </div>
+          <div
+            class="accordion accordion-flush"
+            id="accordionPanelsStayOpenExample"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Available online
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      In stock <span>(1087)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  By sport
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Cardio training <span>(773)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Pilates <span>(550)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Stretching <span>(550)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Toning <span>(550)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Soft gym <span>(405)</span>
+                    </label>
+                  </div>
+                  <button class="btn btn-outline-light">+ Show more</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  By product type
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      T-shirt <span>(500)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Shorts <span>(331)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Leggings <span>(122)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Trousers <span>(82)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Tank <span>(79)</span>
+                    </label>
+                  </div>
+                  <button class="btn btn-outline-light">+ Show more</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  By gender
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Women's <span>(500)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Men's <span>(331)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Girl's <span>(122)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      No gender <span>(82)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Boy's <span>(79)</span>
+                    </label>
+                  </div>
+                  <button class="btn btn-outline-light">+ Show more</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFive"
+                >
+                  By size
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <button class="btn btn-outline-light">+ Show more</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSix"
+                >
+                  By price
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Clearance <span>(500)</span>
+                    </label>
+                  </div>
+
+                  <button class="btn btn-outline-light">+ Show more</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSeven"
+                >
+                  By gender
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSeven"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Domyos <span>(1,314)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Kiprun <span>(27)</span>
+                    </label>
+                  </div>
+
+                  <button class="btn btn-outline-light">+ Show more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Catalog -->
+        <div class="main-catalog">
+          <ol class="product-list-container">
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p2076050/k$94d677766355ad2ddc92eaa642cceb69/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR1,799.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href="rowing-machine-product.html">Self-powered rowing machine 500DB</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p1991392/k$433731b12500354eeb8bde2b0d81fc75/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR3,999.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href=""
+                          >Intense Run Treadmill Max Speed 22 km/h - Domyos</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p1992514/k$59618d5fd8e4c83ed2cce1273eb90ea1/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR1,499.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href=""
+                          >Semi-Recumbent Connected Exercise Bike EB Seat</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p1586085/k$8a0e1aacce15f523fd69a2d40b80cf64/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR799.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href=""
+                          >Elliptical / Cross Trainer EL 100 Gym - Domyos</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <ol class="product-list-container">
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p1991449/k$7f723697c945fe2af9d16ad68a6bff17/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR799.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href="">Exercise Bike EB 120 Gym - Domyos</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p1586088/k$28a77b1a7c60a26a3a4bb67c3add0b82/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR1,299.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href=""
+                          >Elliptical/Cross Trainer EL 500 Gym - Domyos</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p1798185/k$0fbfde70f857d4ad786bc323f4290ce0/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR1,699.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href="">Fitness Exercise Bike 500</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p2254167/k$d061543bdc58d60ca54c5bee0b838ca4/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR399.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href=""
+                          >Trampoline Fit Trampo 500 Cardio FItness Foldable
+                          81cm - Domyos</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <ol class="product-list-container">
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p2075991/k$701e8799a28511955239de68bd57afb4/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR1,799.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href=""
+                          >Self-powered and connected exercise bike EB.520DB</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p395566/k$6d52233e77877e40810401a0eb1cd36c/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR19.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href="">Fold-down fitness bad 30l - black</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p2254190/k$b6432c2fb00743221776def4824206c1/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR159.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href=""
+                          >Fitness Cardio Fit Trampoline 100 (Adults & Kids)</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="product-container">
+              <div class="product-card">
+                <img
+                  src="https://contents.mediadecathlon.com/p2122480/k$191536969e3d4a65c2f327fc30ca246d/prod.jpg?format=auto&quality=40&f=800x800"
+                  width="220px"
+                  alt="rowing-machine"
+                />
+                <div class="row">
+                  <div class="desc-container">
+                    <div class="block-price">
+                      <span>MYR79.00</span>
+                    </div>
+                    <div class="product-name">
+                      <h2>
+                        <a href=""
+                          >Home gym df920 floor pads (8mm thick & 4-pack) -
+                          Domyos</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <div class="catalog-show-more-button">
+            <button
+              class="btn btn-outline-light"
+              style="background-color: #0275d8"
+            >
+              + Show more
+            </button>
+          </div>
+          <!-- Carousel (selected for you) -->
+          <div class="subtitle-container"><h5>Selected For You</h5></div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Additional texts -->
+      <section>
+        <div class="col-sm-12 col-lg-12">
+          <div class="cat-desc-divider desktop-view"></div>
+          <div class="cat-desc-prod_list">
+            <p>
+              Are you looking to shop for workout or fitness gear? Our Cardio
+              Fitness range is bound to have the stuff you're looking for.
+              From&nbsp;<a
+                href="https://www.decathlon.my/9469-workout-equipments"
+                >fitness equipment</a
+              >
+              and
+              <a href="https://www.decathlon.my/9468-workout-accessories"
+                >accessories</a
+              >, to&nbsp;<a href="https://www.decathlon.my/9465-mens-apparel"
+                >men</a
+              >&nbsp;&amp;&nbsp;<a
+                href="https://www.decathlon.my/9461-womens-apparel"
+                >women's</a
+              >
+              apparel and
+              <a href="https://www.decathlon.my/9459-workout-shoes">shoes</a>,
+              we're sure we can offer something that can satisfy your fitness
+              needs.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
