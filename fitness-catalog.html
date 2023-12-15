@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog</title>
-    <link rel="stylesheet" href="fitness-catalog.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
@@ -65,7 +65,7 @@
       <div class="filter-bar">
         <div class="filter-inner-bar">
           <div class="filter-toggle">
-            <a href="">
+            <a class="filter-toggle-button" href="">
               <span
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling"
@@ -485,7 +485,7 @@
                     </div>
                     <div class="product-name">
                       <h2>
-                        <a href="rowing-machine-product.html">Self-powered rowing machine 500DB</a>
+                        <a href="">Self-powered rowing machine 500DB</a>
                       </h2>
                     </div>
                   </div>
@@ -755,12 +755,315 @@
             </button>
           </div>
           <!-- Carousel (selected for you) -->
-          <div class="subtitle-container"><h5>Selected For You</h5></div>
-          
+          <div class="carousel-outer-container">
+            <div class="subtitle-container"><h5>Selected For You</h5></div>
+            <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <ol class="product-carousel-container" >
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p2076050/k$94d677766355ad2ddc92eaa642cceb69/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR1,799.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href="">Self-powered rowing machine 500DB</a>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p1991392/k$433731b12500354eeb8bde2b0d81fc75/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR3,999.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href=""
+                                >Intense Run Treadmill Max Speed 22 km/h - Domyos</a
+                              >
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p1992514/k$59618d5fd8e4c83ed2cce1273eb90ea1/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR1,499.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href=""
+                                >Semi-Recumbent Connected Exercise Bike EB Seat</a
+                              >
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p1586085/k$8a0e1aacce15f523fd69a2d40b80cf64/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR799.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href=""
+                                >Elliptical / Cross Trainer EL 100 Gym - Domyos</a
+                              >
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="carousel-item">
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <ol class="product-carousel-container">
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p1991449/k$7f723697c945fe2af9d16ad68a6bff17/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR799.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href="">Exercise Bike EB 120 Gym - Domyos</a>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p1586088/k$28a77b1a7c60a26a3a4bb67c3add0b82/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR1,299.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href=""
+                                >Elliptical/Cross Trainer EL 500 Gym - Domyos</a
+                              >
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p1798185/k$0fbfde70f857d4ad786bc323f4290ce0/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR1,699.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href="">Fitness Exercise Bike 500</a>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p2254167/k$d061543bdc58d60ca54c5bee0b838ca4/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR399.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href=""
+                                >Trampoline Fit Trampo 500 Cardio FItness Foldable
+                                81cm - Domyos</a
+                              >
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="carousel-item">
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <ol class="product-carousel-container">
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p2075991/k$701e8799a28511955239de68bd57afb4/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR1,799.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href=""
+                                >Self-powered and connected exercise bike EB.520DB</a
+                              >
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p395566/k$6d52233e77877e40810401a0eb1cd36c/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR19.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href="">Fold-down fitness bad 30l - black</a>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p2254190/k$b6432c2fb00743221776def4824206c1/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR159.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href=""
+                                >Fitness Cardio Fit Trampoline 100 (Adults & Kids)</a
+                              >
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-container">
+                    <div class="product-card">
+                      <img
+                        src="https://contents.mediadecathlon.com/p2122480/k$191536969e3d4a65c2f327fc30ca246d/prod.jpg?format=auto&quality=40&f=800x800"
+                        width="220px"
+                        alt="rowing-machine"
+                      />
+                      <div class="row">
+                        <div class="desc-container">
+                          <div class="block-price">
+                            <span>MYR79.00</span>
+                          </div>
+                          <div class="product-name">
+                            <h2>
+                              <a href=""
+                                >Home gym df920 floor pads (8mm thick & 4-pack) -
+                                Domyos</a
+                              >
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+          </div>
+          
         </div>
       </div>
+    </div>
+  </div>
       <!-- Additional texts -->
       <section>
         <div class="col-sm-12 col-lg-12">
@@ -797,5 +1100,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./catalog.js"></script>
   </body>
 </html>
